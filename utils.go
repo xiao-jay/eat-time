@@ -27,7 +27,7 @@ type feishuMsg struct {
 func SendMessage(msg string) {
 	client := &http.Client{}
 	feishuMsg := feishuMsg{MsgType: "post"}
-	feishuMsg.Content.Post.ZhCn.Title = "Xiaotian notice"
+	feishuMsg.Content.Post.ZhCn.Title = "吃饭 notice"
 	feishuMsg.Content.Post.ZhCn.Content = make([][]struct {
 		Tag    string `json:"tag"`
 		Text   string `json:"text,omitempty"`
